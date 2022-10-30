@@ -19,14 +19,14 @@ use Inertia\Inertia;
 
 
 
-Route::get('/', function () {
+Route::get('tests', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-})->name('home');
+})->name('tests');
 
 Route::middleware([
     'auth:sanctum',
@@ -40,4 +40,4 @@ Route::middleware([
 
 
 //Test
-Route::get('tests',[ TestController::class, 'index'])->name('tests');
+Route::get('/',[ TestController::class, 'index'])->name('home');

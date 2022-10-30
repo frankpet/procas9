@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build && vite build --ssr && npm run start",
+        "build": "vite build && vite build --ssr",
         "start": "node bootstrap/ssr/ssr.mjs"
     },
     "devDependencies": {

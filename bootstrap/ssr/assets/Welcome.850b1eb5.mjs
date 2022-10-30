@@ -17,14 +17,14 @@ const _sfc_main = {
       _push(`<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0"><div class="fixed top-0 left-0 px-6 py-4">`);
       _push(ssrRenderComponent(unref(Link), {
         class: "text-sm text-gray-700",
-        href: _ctx.route("tests")
+        href: _ctx.route("home")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`tests`);
+            _push2(`home`);
           } else {
             return [
-              createTextVNode("tests")
+              createTextVNode("home")
             ];
           }
         }),
