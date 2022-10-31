@@ -1,10 +1,10 @@
 <template>
-  <Head title="Startpagina" />
+  <Head title="Contact" />
   <div class="text-blue-100 hover:text-indigo-200  bg-blue-400 flex justify-center h-full items-center w-full">
-    <div>
-      <div class=" flex test "></div>
-      <div class="test pl-4">
-        <Link :href="route('tests')"><img src="images/problue.png"></Link>
+    <div class="p-b-100">
+      <div class=" flex test text-blue-700"></div>
+      <div class="test pl-4 ">
+        <Link class=" fnt-134 text-bold" :href="route('tests')">Contact</Link>
 
       </div>
     </div>

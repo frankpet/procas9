@@ -41,3 +41,7 @@ Route::middleware([
 
 //Test
 Route::get('/',[ TestController::class, 'index'])->name('home');
+Route::get('/welcome',[ TestController::class, 'welcome'])->name('welcome');
+Route::get('/about',[ TestController::class, 'about'])->name('about');
+Route::get('/contact',[ TestController::class, 'contact'])->name('contact');
+Route::get('/home',[ TestController::class, 'home'])->name('home2');

@@ -19,6 +19,22 @@ class TestController extends Controller
     {
       return Inertia::render('Test');
     }
+    public function home()
+    {
+      return Inertia::render('Test/Home');
+    }
+    public function about()
+    {
+      return Inertia::render('Test/About');
+    }
+    public function contact()
+    {
+      return Inertia::render('Test/Contact');
+    }
+    public function welcome()
+    {
+      return Inertia::render('Test/Welkom');
+    }
 
     /**
      * Show the form for creating a new resource.
